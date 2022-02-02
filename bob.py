@@ -1,8 +1,50 @@
-from traceback import format_stack
-from urllib.request import urlopen
-from winreg import HKEY_LOCAL_MACHINE
+again = 'y'
 
+while (again == 'y'):
 
+    p1 = input("Player 1 --> Rock, Paper, or Scissors? ")
+    p1 = p1.lower()
 
+    print()
 
-urlopen("https://www.learnpython.org/en/Basic_String_Operations")
+    p2 = input("Player 2 --> Rock, Paper, or Scissors? ")
+    p2 = p2.lower()
+
+    print()
+
+    if (p1 == "rock"):
+        if (p2 == "rock"):
+            print("The game is a draw")
+            
+        elif (p2 == "paper"):
+            print("Player 2 wins!")
+            
+        elif (p2 == "scissors"):
+            print("Player 1 wins!")
+            
+    elif (p1 == "paper"):
+        if (p2 == "rock"):
+            print("Player 1 wins!")
+            
+        elif (p2 == "paper"):
+            print("The game is a draw")
+            
+        elif (p2 == "scissors"):
+            print("Player 2 wins!")
+            
+    elif (p1 == "scissors"):
+        if (p2 == "rock"):
+            print("Player 2 wins!")
+            
+        elif (p2 == "paper"):
+            print("Player 1 wins!")
+            
+        elif (p2 == "scissors"):
+            print("The game is a draw")
+            
+    else:
+        print("Invalid input, try again")
+
+    again = input("Type y to play again, anything else to stop: ")
+
+    print()
