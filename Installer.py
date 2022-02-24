@@ -1,1 +1,1 @@
-python -m pip --version
+python --version
