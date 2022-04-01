@@ -1,1 +1,2 @@
-print("hello")
+print("er rull gay")
+print("ja")
